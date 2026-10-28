@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:uno",
+    "sketch": "Arduino\\Encender_led\\Encender_led.ino",
+    "port": "COM3",
+    "programmer": "arduino:avrisp"
+}

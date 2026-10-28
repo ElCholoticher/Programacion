@@ -1,0 +1,18 @@
+<!DOCTYPE KTechlab>
+<document type="circuit">
+ <item type="ec/battery" z="0" angle="270" y="100" id="cell" x="76" flip="0">
+  <data type="number" value="5" id="voltage"/>
+ </item>
+ <item type="ec/led" z="1" angle="270" y="84" id="led" x="204" flip="0">
+  <data type="number" value="1e-15" id="I_S"/>
+  <data type="number" value="1" id="N"/>
+  <data type="number" value="4.7" id="V_B"/>
+  <data type="color" value="#f62a2a" id="0-color"/>
+ </item>
+ <item type="ec/resistor" z="2" angle="0" y="44" id="resistor" x="148" flip="0">
+  <data type="number" value="220000" id="resistance"/>
+ </item>
+ <connector end-node-parent="resistor" start-node-parent="cell" manual-route="1" start-node-cid="p1" end-node-is-child="1" route="9,10,9,9,9,8,9,7,9,6,9,5,10,5,11,5,12,5,13,5,14,5,15,5," start-node-is-child="1" id="connector" end-node-cid="n1"/>
+ <connector end-node-parent="led" start-node-parent="resistor" manual-route="0" start-node-cid="p1" end-node-is-child="1" route="21,5,22,5,23,5,24,5,25,5,25,6,25,7,25,8," start-node-is-child="1" id="connector__12" end-node-cid="p1"/>
+ <connector end-node-parent="led" start-node-parent="cell" manual-route="0" start-node-cid="n1" end-node-is-child="1" route="9,14,9,15,10,15,11,15,12,15,13,15,14,15,15,15,16,15,17,15,18,15,19,15,20,15,21,15,22,15,23,15,24,15,25,15,25,14,25,13,25,12," start-node-is-child="1" id="connector__13" end-node-cid="n1"/>
+</document>
