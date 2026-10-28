@@ -1,1 +1,3 @@
 /.vscode
+echo "*zip" >> .gitignore
+echo "Arduino/*zip" >> .gitignore
